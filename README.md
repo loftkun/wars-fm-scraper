@@ -37,14 +37,14 @@ $ # check version
 $ google-chrome --version
 Google Chrome 64.0.3282.167
 ```
-<br>
+
 ##### selenium ( python binding )    
 ```bash
 $ pip3 install selenium
 ```
-<br>
+
 ##### chromedriver  
-If you want latest version, get from below.
+If you want latest version, get from below.  
 [https://sites.google.com/a/chromium.org/chromedriver/downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 ```bash
 $ wget https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip
@@ -52,6 +52,7 @@ $ unzip chromedriver_linux64.zip
 $ sudo mv chromedriver /usr/local/bin/
 ```
 <br>
+
 ## Usage
 ```bash
 $ ./wars-fm-scraper.py ${url} ${filepath}
@@ -101,4 +102,3 @@ PW[testuser(2073)]
 ;B[dd];W[gf];B[dg];W[fc];B[fd];W[gd];B[fe];W[ge];B[ec];W[cg];B[cf];W[bf];B[ch];W[bg];B[ce];W[be];B[bd];W[bh];B[dh];W[bc];B[ae];W[cc];B[cd];W[ab];B[db];W[ad];B[ac];W[ba];B[cb];W[ad];B[fb];W[bb];B[ac];W[ef];B[ad];W[df];B[eg];W[ff];B[bi];W[fg];B[ah];W[gc];B[gb];W[hb];B[ha])
 $
 ```
-
