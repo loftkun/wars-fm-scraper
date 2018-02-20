@@ -55,13 +55,15 @@ $ sudo mv chromedriver /usr/local/bin/
 
 ## Usage
 ```bash
-$ ./wars-fm-scraper.py ${url} ${filepath}
+wars-fm-scraper.py ${url} ${filepath}
 ```
 
 ### example
 #### Shogi Quest ( 将棋クエスト ) 
 ```bash
-$ ./wars-fm-scraper.py http://wars.fm/shogi10?gameId=r0jo2gocc27f#game/r0jo2gocc27f test.csa
+$ url=http://wars.fm/shogi10?gameId=r0jo2gocc27f#game/r0jo2gocc27f
+$ filepath=test.csa
+$ ./wars-fm-scraper.py ${url} ${filepath}
 get : http://wars.fm/shogi10?gameId=r0jo2gocc27f#game/r0jo2gocc27f
 saved : test.csa
 $ cat ./test.csa
@@ -92,10 +94,12 @@ $
 ```
 #### Go Quest ( 囲碁クエスト ) / Renju Quest ( 五目クエスト )
 ```bash
-$ ./wars-fm-scraper.py http://wars.fm/go9?gameId=ihl3v3uu7thy#game/ihl3v3uu7thy hoge.sgf
+$ url=http://wars.fm/go9?gameId=ihl3v3uu7thy#game/ihl3v3uu7thy
+$ filepath=test.sgf
+$ ./wars-fm-scraper.py ${url} ${filepath}
 get : http://wars.fm/go9?gameId=ihl3v3uu7thy#game/ihl3v3uu7thy
-saved : hoge.sgf
-$ cat ./hoge.sgf
+saved : test.sgf
+$ cat ./test.sgf
 (;GM[1]SZ[9]KM[7.0]RU[Chinese]
 PB[:Aya5Bot(1969)]
 PW[testuser(2073)]
