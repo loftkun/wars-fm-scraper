@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 
 # args
 if( len(sys.argv) != 3 ):
-	print('usage : war-fm-scraper.py url filepath')
+	print('usage : wars-fm-scraper.py url filepath')
 	sys.exit()
 url		= sys.argv[1] # http://wars.fm/shogi10?gameId=r0jo2gocc27f#game/r0jo2gocc27f
 filepath= sys.argv[2] # test.csa
@@ -63,7 +63,7 @@ except:
 kif = driver.find_element_by_id("kif-export-box").get_attribute('value')
 #print(kif)
 
-# 保存
+# save kif
 f = open(filepath, 'w')
 f.write(kif)
 f.close()
